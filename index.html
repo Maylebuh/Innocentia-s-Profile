@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocentia Malebo Mawela | Software Engineer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --primary-dark: #564FD1;
+            --secondary: #2D3748;
+            --dark: #1A202C;
+            --light: #F7FAFC;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1A202C, #2D3748);
+            color: #E2E8F0;
+            line-height: 1.6;
+        }
+        
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 700;
+            color: var(--light);
+            font-size: 1.75rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+        }
+        
+        .card {
+            background: rgba(45, 55, 72, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: 1rem;
+            border: 1px solid rgba(74, 85, 104, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .badge {
+            background: rgba(108, 99, 255, 0.15);
+            color: var(--primary);
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        img {
+            background-color: #2D3748;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="py-6 px-6 lg:px-24 fixed w-full z-50 bg-dark bg-opacity-80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">
+                <span class="text-primary">IMM</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#skills" class="hover:text-primary transition">Skills</a>
+                <a href="#projects" class="hover:text-primary transition">Projects</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+            </div>
+            <button class="md:hidden text-gray-400">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Larger Profile Picture -->
+<!-- Hero Section with Original Picture Size (Improved) -->
+  <section id="home" class="min-h-screen flex items-center pt-20 px-6 lg:px-24">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Hi, I'm <span class="text-primary">Innocentia Malebo Mawela</span>
+                </h1>
+                <h2 class="text-2xl text-gray-400 mb-6">
+                    Software Engineer | Frontend Specialist
+                </h2>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg">
+                    A Software Engineering graduate with a strong passion for building clean, accessible, and user-friendly digital experiences. I specialize in front-end development using HTML, CSS, and JavaScript, while actively expanding my skills in React and modern frameworks. I also work with Python for data-driven applications and analysis. My background as a Data Operator and Quality Assurance Manager has sharpened my attention to detail and given me a solid foundation in system accuracy, usability, and user experience. I approach development with a quality-first mindset and a drive to create reliable, impactful digital products.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="btn-primary px-6 py-3 rounded-full font-medium">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-primary text-primary px-6 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary">
+                    <!-- Replace with your profile image -->
+                    <img src="images/innocentia-portfolioimagesprofile.jpg.JPG" alt="Innocentia Malebo Mawela" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- Simplified About Section Without Download Button -->
+<section id="about" class="py-20 px-6 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">About Me</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <p class="text-gray-300 mb-6">
+                    ALX-certified <strong>Software Engineer</strong> (NQF Level 5) with hands-on experience in frontend development, data operations, and quality assurance. My background in QA gives me a unique eye for detail that I apply to every line of code.
+                </p>
+                <p class="text-gray-300 mb-6">
+                    As a former <strong>Quality Assurance Manager</strong>, I developed rigorous testing methodologies and a commitment to delivering error-free products - skills that now enhance my development workflow.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-graduation-cap text-primary mr-4"></i>
+                        <div>
+                            <h4 class="font-bold">ALX Software Engineering</h4>
+                            <p class="text-gray-400">NQF Level 5 Certification | 2024</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-certificate text-primary mr-4"></i>
+                        <div>
+                            <h4 class="font-bold">Meta Frontend Development</h4>
+                            <p class="text-gray-400">Coursera Certification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="card p-6 text-center hover:border-primary transition">
+                    <i class="fas fa-laptop-code text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold mb-2">Frontend</h4>
+                    <p class="text-gray-400">React, JavaScript, CSS</p>
+                </div>
+                <div class="card p-6 text-center hover:border-primary transition">
+                    <i class="fas fa-database text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold mb-2">Backend</h4>
+                    <p class="text-gray-400">Firebase, Express</p>
+                </div>
+                <div class="card p-6 text-center hover:border-primary transition">
+                    <i class="fas fa-bug text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold mb-2">QA</h4>
+                    <p class="text-gray-400">Testing, Debugging</p>
+                </div>
+                <div class="card p-6 text-center hover:border-primary transition">
+                    <i class="fas fa-chart-line text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold mb-2">Data</h4>
+                    <p class="text-gray-400">Analysis, Processing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 lg:px-24 bg-gray-900 bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-title mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-8 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-code text-primary mr-3"></i> Frontend
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="badge px-4 py-2 rounded-full">HTML5</span>
+                        <span class="badge px-4 py-2 rounded-full">CSS3</span>
+                        <span class="badge px-4 py-2 rounded-full">JavaScript</span>
+                        <span class="badge px-4 py-2 rounded-full">React</span>
+                        <span class="badge px-4 py-2 rounded-full">Tailwind</span>
+                    </div>
+                </div>
+                <div class="card p-8 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-server text-primary mr-3"></i> Backend
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="badge px-4 py-2 rounded-full">Firebase</span>
+                        <span class="badge px-4 py-2 rounded-full">Node.js</span>
+                        <span class="badge px-4 py-2 rounded-full">Express</span>
+                        <span class="badge px-4 py-2 rounded-full">Python</span>
+                    </div>
+                </div>
+                <div class="card p-8 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-cogs text-primary mr-3"></i> Tools & QA
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="badge px-4 py-2 rounded-full">Git</span>
+                        <span class="badge px-4 py-2 rounded-full">Jest</span>
+                        <span class="badge px-4 py-2 rounded-full">Data Analysis</span>
+                        <span class="badge px-4 py-2 rounded-full">UI/UX Principles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="py-20 px-6 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- CodeStream -->
+            <div class="card p-6 hover:border-primary transition">
+                <div class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                    <img src="images/codestream.png" alt="CodeStream video platform interface" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-2">CodeStream</h3>
+                <p class="text-gray-400 mb-4">Developer-focused video platform built with React and Express.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="badge px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="badge px-3 py-1 rounded-full text-sm">Firebase</span>
+                    <span class="badge px-3 py-1 rounded-full text-sm">Express</span>
+                </div>
+                <div class="mt-4 flex space-x-3">
+                    <a href="#" class="text-primary hover:underline text-sm">Live Demo</a>
+                    <a href="#" class="text-primary hover:underline text-sm">View Code</a>
+                </div>
+            </div>
+            
+            <!-- Sentiment Analysis -->
+            <div class="card p-6 hover:border-primary transition">
+                <div class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                    <img src="images/sentiment-dashboard.jpg" alt="Sentiment Analysis Dashboard" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-2">Sentiment Analysis Dashboard</h3>
+                <p class="text-gray-400 mb-4">Python-powered dashboard for analyzing text sentiment.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="badge px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="badge px-3 py-1 rounded-full text-sm">Streamlit</span>
+                    <span class="badge px-3 py-1 rounded-full text-sm">NLTK</span>
+                </div>
+                <div class="mt-4 flex space-x-3">
+                    <a href="https://sentimental-dashboard-ceij7w4tknetq9xesrvu3d.streamlit.app/" target="_blank" class="text-primary hover:underline text-sm">Live Demo</a>
+                    <a href="https://github.com/Maylebuh/Sentimental-Dashboard" target="_blank" class="text-primary hover:underline text-sm">View Code</a>
+                </div>
+            </div>
+            
+            <!-- TheJavas Chatbot -->
+            <div class="card p-6 hover:border-primary transition">
+                <div class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                    <img src="images/chatbot-preview.png" alt="TheJavas Chatbot interface" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold mb-2">TheJavas Chatbot</h3>
+                <p class="text-gray-400 mb-4">Interactive chatbot built with vanilla JavaScript.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="badge px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="badge px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                </div>
+                <div class="mt-4 flex space-x-3">
+                    <a href="https://fuschia-potent-polyanthus.glitch.me/" target="_blank" class="text-primary hover:underline text-sm">Live Demo</a>
+                    <a href="https://github.com/Maylebuh" target="_blank" class="text-primary hover:underline text-sm">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Smart Health Assist -->
+<div class="card p-6 hover:border-primary transition">
+    <div class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden">
+        <img src="images/smarthealthassist.jpg.jpeg" alt="Smart Health Assistant Screenshot" class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-xl font-bold mb-2">Smart Health Assist</h3>
+    <p class="text-gray-400 mb-4">AI-powered health assistant that provides personalized wellness advice using Python, Streamlit, and Transformers.</p>
+    <div class="flex flex-wrap gap-2">
+        <span class="badge px-3 py-1 rounded-full text-sm">Python</span>
+        <span class="badge px-3 py-1 rounded-full text-sm">Streamlit</span>
+        <span class="badge px-3 py-1 rounded-full text-sm">Transformers</span>
+    </div>
+    <div class="mt-4 flex space-x-3">
+        <a href="https://smart-health-assistant-68gx.onrender.com/" target="_blank" class="text-primary hover:underline text-sm">Live Demo</a>
+        <a href="https://github.com/Maylebuh/Smart-Health-Assistant/blob/main/SmartHealthAssist.htm" target="_blank" class="text-primary hover:underline text-sm">View Code</a>
+    </div>
+</div>
+    </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 lg:px-24 bg-gray-900 bg-opacity-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">Get In Touch</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <p class="text-gray-300 mb-8 max-w-lg">
+                    Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Email</h4>
+                            <a href="mailto:malebomawela96@gmail.com" class="text-gray-400 hover:text-primary transition">malebomawela96@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fab fa-linkedin-in text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/innocentia-mawela-a441a0212/" target="_blank" class="text-gray-400 hover:text-primary transition">linkedin.com/in/innocentia-mawela</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4">
+                            <i class="fab fa-github text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">GitHub</h4>
+                            <a href="https://github.com/Maylebuh" target="_blank" class="text-gray-400 hover:text-primary transition">github.com/Maylebuh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- REPLACE JUST THIS FORM SECTION -->
+            <form id="contact-form" action="https://formspree.io/f/mdkzjvan" method="POST" class="card p-8">
+                <div id="form-messages" class="hidden mb-4 p-4 rounded-lg text-white"></div>
+                
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-300 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required 
+                           class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <p id="name-error" class="hidden text-red-400 text-sm mt-1">Please enter your name</p>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-300 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required 
+                           class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <p id="email-error" class="hidden text-red-400 text-sm mt-1">Please enter a valid email</p>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-300 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" required 
+                              class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    <p id="message-error" class="hidden text-red-400 text-sm mt-1">Please enter your message</p>
+                </div>
+                
+                <button type="submit" class="btn-primary px-6 py-3 rounded-lg font-medium w-full hover:bg-primary-dark transition">
+                    Send Message
+                </button>
+            </form>
+            <!-- END OF FORM SECTION -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 text-center text-gray-400 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+        <p>© 2024 Innocentia Malebo Mawela. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="text-gray-400 hover:text-primary transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-primary transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/innocentia-mawela-a441a0212/" target="_blank" class="text-gray-400 hover:text-primary transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Maylebuh" target="_blank" class="text-gray-400 hover:text-primary transition"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+ <script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Reset messages
+    document.querySelectorAll('[id$="-error"]').forEach(el => el.classList.add('hidden'));
+    document.getElementById('form-messages').classList.add('hidden');
+    
+    // Validate form
+    let isValid = true;
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+    
+    if (!name.value.trim()) {
+        document.getElementById('name-error').classList.remove('hidden');
+        isValid = false;
+    }
+    
+    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        document.getElementById('email-error').classList.remove('hidden');
+        isValid = false;
+    }
+    
+    if (!message.value.trim()) {
+        document.getElementById('message-error').classList.remove('hidden');
+        isValid = false;
+    }
+    
+    if (!isValid) return;
+    
+    // Submit form
+    const form = e.target;
+    const formData = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.innerHTML;
+    
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+    
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Failed to send message');
+        }
+    })
+    .then(data => {
+        const messageDiv = document.getElementById('form-messages');
+        messageDiv.textContent = 'Thank you! Your message has been sent successfully.';
+        messageDiv.classList.remove('hidden', 'bg-red-500');
+        messageDiv.classList.add('bg-green-500');
+        form.reset();
+    })
+    .catch(error => {
+        const messageDiv = document.getElementById('form-messages');
+        messageDiv.textContent = 'Oops! There was a problem. Please email me directly at malebomawela96@gmail.com';
+        messageDiv.classList.remove('hidden', 'bg-green-500');
+        messageDiv.classList.add('bg-red-500');
+    })
+    .finally(() => {
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonText;
+    });
+});
+</script>
